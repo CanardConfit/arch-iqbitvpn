@@ -13,3 +13,7 @@ notes.txt
 
 # ignore virtual env
 venv
+
+tmp/
+
+docker-compose.yml
