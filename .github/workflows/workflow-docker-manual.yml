@@ -63,7 +63,7 @@ jobs:
         id: lower-repo
         shell: pwsh
         run: |
-          echo "repository=$($env:GITHUB_REPOSITORY.ToLowerInvariant())" >> $GITHUB_OUTPUT
+          echo "repository=$($env:GITHUB_REPOSITORY.ToLowerInvariant())" >> $env:GITHUB_OUTPUT
       - name: Build amd64 image and export to Docker for testing
         uses: Wandalen/wretry.action@v3
         with:
